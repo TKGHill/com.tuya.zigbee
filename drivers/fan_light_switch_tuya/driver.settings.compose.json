@@ -1,0 +1,28 @@
+[  
+        {
+          "id": "powerOnStateSetting",
+          "type": "radio",
+          "label": {"en": "Power On State Setting"},
+          "value": "2",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Off"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "On"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Remember last status"
+        }
+        }
+      ]
+    }
+] 

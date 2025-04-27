@@ -1,0 +1,56 @@
+{
+  "id": "fan_light_switch",
+  "name": {
+    "en": "Fan On/Off, Fan Speed"
+  },
+  "class": "fan",
+  "capabilities": ["onoff","measure_fan_speed"],
+  "platforms": ["local"],
+  "connectivity": ["zigbee"],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.jpg",
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.jpg"
+  },
+  "energy": {
+    "approximation": {
+      "usageOn": 0,
+      "usageOff": 0
+    }
+  },
+"zigbee": {
+    "manufacturerName": ["_TZE204_lawxy9e2"],
+    "productId": ["TS0601"],
+    "endpoints": {
+      "1": {
+        "clusters": [0, 4, 5, 61184],
+        "bindings": [10, 25, 61184]
+      },
+      "242": {
+        "clusters": [],
+        "bindings": [33]
+      }
+    },
+    "devices": {
+      "secondSwitch": {
+        "class": "light",
+        "capabilities": ["onoff"],
+        "name": {
+          "en": "Fan Light"
+        },
+        "energy": {
+          "approximation": {
+            "usageOn": 0,
+            "usageOff": 0
+          }
+        }
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/icon.svg",
+      "instruction": {
+        "en": "A tile for Fan On/Off, Fan Speed and a tile for Fan light will be created. Press any button for 5 seconds (the Indicator led should start flashing)."
+      }
+    }
+  }
+}
