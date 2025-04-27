@@ -1,0 +1,48 @@
+[  
+        {
+          "id": "powerOnStateSetting",
+          "type": "radio",
+          "label": {"en": "Relay Status"},
+          "hint": {"en": "Power On State Setting"},
+          "value": "2",
+    "values": [
+      {
+        "id": "0",
+        "label": {"en": "Off"}
+      },
+      {
+        "id": "1",
+        "label": {"en": "On"}
+      },
+      {
+        "id": "2",
+        "label": {"en": "Remember last status"}
+      }
+      ]
+    },
+    {
+           "id": "operTimer",
+           "type": "number",
+           "label": {"en": "Duration open/close"},
+           "hint": {"en": "Time to complete an opeing or close of the garage door (DP12 reportis generated when expiring)"},
+           "units": {"en": "seconds"},
+           "min": 10,
+           "max": 300
+    },
+    {
+      "id": "autoCloseTimer",
+      "type": "number",
+      "label": {"en": "Auto Close time"},
+      "hint": {"en": "Time setting for receiveing garage door open notification"},
+      "units": {"en": "seconds"},
+      "min": 60,
+      "max": 7200
+},
+    {
+      "id": "openingTimesupervision",
+      "type": "checkbox",
+      "value": false,
+      "label": {"en": "Supervise garage door open?"},
+      "hint": {"en": "When true timer will expire after openingTimesupervisionTimer (s)"}
+}
+] 
